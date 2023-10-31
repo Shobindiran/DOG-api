@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DogApi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- header -->
+    <header class="bg-black">
+        <div class="container">
+            <div class="header-wrapper">
+                <nav class="navbar navbar-dark ">
+                    <a class="navbar-brand" href="#">DogApi</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- app -->
+    <section class="dashboard pt-5">
+        <div class="container">
+            <div class="dashboard-wrapper">
+                <div class="button-list">
+                    <input type="button" value="add a image" class="btn btn-primary me-3" id="add">
+                    <input type="button" value="Remove" class="btn btn-danger me-3" id="remove">
+                    <input type="button" value="clear all" class="btn btn-danger me-3" id="clear">
+                    <input type="button" value="count image" class="btn btn-info" id="countbtn">                  
+                </div>
+
+                <div class="image-list mt-5 row gy-3 ">
+                    <h1 id="count"></h1>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="dog-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <script src="./app.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+    
